@@ -8,7 +8,7 @@ function Navbar() {
     navRef.current = background
 
     const controlNavbar = () => {
-        if (window.scrollY > 500) {
+        if (window.scrollY > 750) {
             setBackground("nav-solid")
         } else {
             setBackground("nav-transparent")
