@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Raleway&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --prussianBlue: #172A3A;
+    --warmBlack: #004346;
+    --blizzardBlue: #98DFEA;
+    --tiffanyblue: #07BEB8;
+    --paleSilver: #D6C9C9;
+}
+
+/* Navbar Styling */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background: var(--prussianBlue);
+}
+.nav-logo-wrapper {
+    display: flex;
+    align-items: center;
+    color: white;
+    line-height: 0;
+}
+.nav-logo {
+    margin-left: 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.nav-title {
+    margin-left: 0.75rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+    cursor: default;
+}
+.nav-links {
+    margin-right: 2rem;
+}
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    margin-right: 2rem;
+}
+
+/* Banner Styling */
+.banner {
+    height: 100vh;
+    background-image: url("./static-image/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
