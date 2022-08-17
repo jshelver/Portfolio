@@ -12,8 +12,12 @@
     --paleSilver: #D6C9C9;
 }
 
+.container > h1 {
+    margin-top: 2rem;
+}
+
 /* Navbar Styling */
-nav {
+.nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -22,12 +26,22 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    background: var(--prussianBlue);
+    z-index: 1;
+    transition-timing-function: ease;
+    transition: all 0.5s ease;
+}
+.nav-transparent {
+    background: none;
+    box-shadow: none;
+}
+.nav-solid {
+    background: white;
+    box-shadow: 0px 3px 7.45px rgba(0, 0, 0, 0.15);
 }
 .nav-logo-wrapper {
     display: flex;
     align-items: center;
-    color: white;
+    color: black;
     line-height: 0;
 }
 .nav-logo {
@@ -43,17 +57,51 @@ nav {
 }
 .nav-links {
     margin-right: 2rem;
+    display: flex;
 }
-.nav-links a {
+.nav-links li {
+    list-style: none;
+}
+.nav-links li a {
     text-decoration: none;
-    color: white;
+    color: black;
     margin-right: 2rem;
+    position: relative;
+    padding-block: 0.25rem;
+}
+
+/* Navbar Slide-in Animations */
+.nav-links li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    height: .1rem;
+    width: 100%;
+    transform-origin: right bottom;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+.nav-links li a:hover::after,
+.nav-links li a:active::after {
+    transform: scaleX(1);
+    transform-origin: left bottom;
+    transition: transform 0.3s ease;
 }
 
 /* Banner Styling */
 .banner {
     height: 100vh;
-    background-image: url("./static-image/banner.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)), url("./static-image/banner.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position-x: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-title {
+    font-size: 2.3rem;
+    text-align: center;
 }

@@ -6,6 +6,27 @@ function App() {
         <div className="container">
             <Navbar/>
             <Banner/>
+            <h1>A</h1>
+            <h1>A</h1>
+            <h1>A</h1>
+            <h1>A</h1>
+            <h1>A</h1>
+            <h1>A</h1>
+            <h1>A</h1>
+            <h1>A</h1>
+            <h1>A</h1>
+            <h1>A</h1>
+            <h1>A</h1>
+            <h1>A</h1>
+            <h1>A</h1>
+            <h1>A</h1>
+            <h1>A</h1>
+            <h1>A</h1>
+            <h1>A</h1>
+            <h1>A</h1>
+            <h1>A</h1>
+            <h1>A</h1>
+            <h1>A</h1>
         </div>
     )
 }
