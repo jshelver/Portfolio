@@ -8,7 +8,7 @@ function Navbar() {
     navRef.current = background
 
     const controlNavbar = () => {
-        if (window.scrollY > 750) {
+        if (window.scrollY > 400) {
             setBackground("nav-solid")
         } else {
             setBackground("nav-transparent")
@@ -26,10 +26,10 @@ function Navbar() {
         <nav className={`nav ${background}`}>
             <div className="nav-logo-wrapper">
                 <a onClick={() => window.location.reload(false)}><HiOutlineCode className="nav-logo"/></a>
-                <h1 className="nav-title">Jason Shelver</h1>
+                <h1 className="nav-title" onClick={() => window.location.reload(false)}>Jason Shelver</h1>
             </div>
             <ul className="nav-links">
-                <li><a href="#">About</a></li>
+                <li><a href="#about-anchor">About</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
